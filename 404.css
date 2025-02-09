@@ -1,0 +1,103 @@
+.error-page {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: 
+        linear-gradient(0deg, rgba(0, 0, 0, 0.9) 0%, rgba(32, 32, 32, 0.4) 89%),
+        url('assets/img/hero-bg.png') no-repeat center center/cover;
+    position: relative;
+    overflow: hidden;
+}
+
+.error-content {
+    text-align: center;
+    position: relative;
+    z-index: 2;
+    animation: fadeInUp 1s ease-out;
+}
+
+.error-404 {
+    font-family: 'Cormorant', serif;
+    font-size: 20rem;
+    background: linear-gradient(45deg, #7FE4D8, #E89B3D);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    margin-bottom: -4rem;
+    text-shadow: 0 0 50px rgba(127, 228, 216, 0.3);
+    animation: float 3s ease-in-out infinite;
+}
+
+.error-message {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: #fff;
+    letter-spacing: 2px;
+}
+
+.home-btn {
+    padding: 15px 40px;
+    background: #4B7F21;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.home-btn:hover {
+    background: #3d6a1b;
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.error-page::before {
+    content: '';
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    background: url('assets/img/404.png') no-repeat center/contain;
+    opacity: 0.3;
+    left: -15%;
+    bottom: -20%;
+    animation: drift 25s linear infinite;
+}
+
+.error-page::after {
+    content: '';
+    position: absolute;
+    width: 600px;
+    height: 600px;
+    background: url('assets/img/404.png') no-repeat center/contain;
+    opacity: 0.3;
+    right: -10%;
+    top: -20%;
+    animation: drift 30s linear infinite reverse;
+}
+
+@keyframes drift {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
