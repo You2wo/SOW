@@ -1,0 +1,74 @@
+body {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.486) 0%, rgb(0, 0, 0) 89%),
+                url('assets/img/hero-bg.png') no-repeat center center/cover;
+}
+
+.rescue-section {
+    padding: 60px 180px;
+}
+
+.rescue-table {
+    width: 100%;
+    border-collapse: collapse;
+    color: white;
+}
+
+.rescue-table th {
+    text-align: left;
+    font-size: 2.5rem;
+    font-weight: 500;
+    padding-bottom: 40px;
+}
+
+.image-cell {
+    width: 50%;
+    padding-right: 25px;
+}
+
+.image-cell img {
+    width: 100%;
+    height: 400px;
+    border-radius: 20px;
+    object-fit: cover;
+}
+
+.content-cell {
+    width: 50%;
+    padding-left: 25px;
+    vertical-align: top;
+}
+
+.date {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.content-cell h3 {
+    font-size: 1.4rem;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+
+.content-cell p {
+    line-height: 1.6;
+    margin-bottom: 30px;
+    font-size: 1.2rem;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.view-more {
+    background-color: #E89B3D;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.view-more:hover {
+    background-color: #d88c2e;
+}

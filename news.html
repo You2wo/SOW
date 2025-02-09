@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="news.css">
+    <title>SOW</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <div class="nav-left">
+            <a href="#"><img src="assets/img/Group 1000001776.png" alt="Logo" style="height: 40px; text-decoration: none; color: white;">
+            </a>
+        </div>
+        <div class="nav-center">
+            <a href="#home">Home</a>
+            <a href="#news">News</a>
+            <a href="/donate.html">Donation</a>
+            <a href="#contact">Contact Us</a>
+        </div>
+        <div class="nav-right">
+            <a href="404.html">
+                <button type="button" class="btn-sign">Sign in</button>
+            </a>
+            <a href="404.html">
+                <button type="button" class="btn-regis">Register</button>
+            </a>
+        </div>
+    </nav>
+
+    <section class="rescue-section">
+        <table class="rescue-table">
+            <tr>
+                <th colspan="2">Latest News</th>
+            </tr>
+            <tr>
+                <td class="image-cell">
+                    <img src="assets/img/kura.png" alt="Baby sea turtle being held">
+                </td>
+                <td class="content-cell">
+                    <span class="date">February 5, 2025</span>
+                    <h3>Endangered Sea Turtles' Early Life Uncovered</h3>
+                    <p>A groundbreaking new study has unveiled crucial details about the early life of endangered sea turtles, revealing the significant impact they have on marine ecosystems. Researchers from the Global Marine Conservation Institute, in collaboration with international partners, have made remarkable discoveries about the first year of life of these remarkable creatures, offering vital information for future conservation efforts.</p>
+                </td>
+            </tr>
+        </table>
+    </section>
+
+    <div id="news" class="news-cards">
+        <div class="news-header">
+            <h2>Latest News</h2>
+        </div>
+
+        <div class="cards-container">
+            <div class="card">
+                <img src="assets/img/kurakecil.jpg" alt="Sea Turtle">
+                <div class="card-content">
+                    <h3>Endangered Sea Turtles' Early Life Uncovered</h3>
+                    <p>Scientists have tracked baby sea turtles using solar-powered GPS tags, revealing surprising insights into their early life.</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="assets/img/kambing.jpg" alt="Sea Turtle">
+                <div class="card-content">
+                    <h3>Endangered Sea Turtles' Early Life Uncovered</h3>
+                    <p>Scientists have tracked baby sea turtles using solar-powered GPS tags, revealing surprising insights into their early life.</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="assets/img/gajah.jpg" alt="Sea Turtle">
+                <div class="card-content">
+                    <h3>Endangered Sea Turtles' Early Life Uncovered</h3>
+                    <p>Scientists have tracked baby sea turtles using solar-powered GPS tags, revealing surprising insights into their early life.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<footer class="footer">
+    <div class="footer-container">
+        <div class="footer-left">
+            <h2><span class="small-text">SAVE OUR</span> <br>WILDLIFE</h2>
+        </div>
+        <div class="footer-center">
+            <a href="#">Home</a>
+            <a href="#">News</a>
+            <a href="#">Donation</a>
+            <a href="#">Contact us</a>
+        </div>
+        <div class="footer-right">
+            <a href="donate.html" class="donate-btn">START DONATING</a>
+        </div>
+    </div>
+</footer>
+
+<script>
+    window.addEventListener("scroll", function () {
+        let navbar = document.querySelector("nav");
+        let scrollThreshold = 150;
+
+        if (window.scrollY > scrollThreshold) {
+            navbar.classList.add("navbar-sticky");
+        } else {
+            navbar.classList.remove("navbar-sticky");
+        }
+    });
+</script>
+
+
+</body>
+</html>
